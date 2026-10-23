@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+*.log
+
+# Local configs never belong in the repository.
+.env
+.env.*
+config.json

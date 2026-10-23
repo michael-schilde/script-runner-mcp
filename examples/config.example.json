@@ -1,0 +1,26 @@
+{
+  "allowed_roots": ["./content"],
+  "tools": [
+    {
+      "name": "count_words",
+      "description": "Counts lines, words and characters of a text file, optionally listing the most frequent words.",
+      "script": "./scripts/word-count.js",
+      "args": ["{file}", "--top={top}"],
+      "params": {
+        "file": {
+          "type": "path",
+          "description": "Text file to analyse",
+          "required": true,
+          "extensions": [".txt", ".md"]
+        },
+        "top": {
+          "type": "integer",
+          "description": "Also list the N most frequent words",
+          "min": 1,
+          "max": 50
+        }
+      },
+      "timeout_ms": 10000
+    }
+  ]
+}
