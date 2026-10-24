@@ -4,6 +4,12 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    groups:
+      eslint:
+        patterns:
+          - "eslint"
+          - "@eslint/*"
+          - "eslint-*"
   - package-ecosystem: github-actions
     directory: /
     schedule:
